@@ -16,4 +16,8 @@ Recommended that the scanning account is allianceless to avoid rally notificatio
 
 Recommended to turn off title notifications under game settings.
 
-Average time per profile is 7 seconds, which results in an total average scanning time of 35 minutes for top300.
+While this tool runs through ADB and allows you to use the PC while scanning, you must keep in mind that the clipboard is being used to copy every player name.
+
+Average time per profile is 7-8 seconds, which results in an total average scanning time of 35-40 minutes for top300.
+
+![Example](https://i.gyazo.com/49f0a946a4fad7b8ca860fb4b7c5053b.png)
