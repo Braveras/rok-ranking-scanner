@@ -20,4 +20,7 @@ While this tool runs through ADB and allows you to use the PC while scanning, yo
 
 Average time per profile is 7-8 seconds, which results in an total average scanning time of 35-40 minutes for top300.
 
+# How to use
+Just open the player ranking menu and start the tool
+
 ![Example](https://i.gyazo.com/49f0a946a4fad7b8ca860fb4b7c5053b.png)
