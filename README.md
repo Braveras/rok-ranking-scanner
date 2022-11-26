@@ -4,6 +4,7 @@ Little tool to generate an excel (.csv) from top300 players in Rise of Kingdoms.
 Tested with MEmu and Bluestacks 5.9.0 (Remember to enable ADB)
 
 > Tablet mode
+
 > Tested with 1920 x 1080 resolution (360 DPI)
 
 It will auto-skip players with a not accessible profile (users that migrated or banned accounts)
