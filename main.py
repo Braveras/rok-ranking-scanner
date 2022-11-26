@@ -93,6 +93,14 @@ def top123(x, y, n): # whole process inside a function to do the top1-2-3 then l
     end_time = time.perf_counter()
     print(f'It took {end_time-start_time: 0.2f} second(s) to complete.')
     
+def checkPlayer():
+    check = device.takeSnapshot(reconnect=True) #Check if governor profile opened. If it didn't, go to next one.
+    check = check.crop((1073, 401, 1181, 435))
+    checkstr = pytesseract.image_to_string(check)
+    checkstr = checkstr.replace('\n', ' ').strip()
+    check.close()
+    return checkstr
+    
 top123(260, 336, '1') #do top1
 top123(262, 466, '2') #do top2
 top123(260, 582, '3') #do top3
@@ -105,15 +113,17 @@ for x in range(4, 300):
     device.shell('input tap 264 721') #tap on governor from ranking list 
     time.sleep(0.7) #wait for GUI to load :)
     
-    check = device.takeSnapshot(reconnect=True) #Check if governor profile opened. If it didn't, go to next one.
-    check = check.crop((1073, 401, 1181, 435))
-    checkstr = pytesseract.image_to_string(check)
-    checkstr = checkstr.replace('\n', ' ').strip()
-    check.close()
+    checkstr = checkPlayer()
+
     if checkstr != 'Power':
         skippedCounter = skippedCounter + 1
         device.shell('input tap 264 846')
         time.sleep(0.7) #wait for GUI to load :)
+        checkstr = checkPlayer()
+        if checkstr != 'Power':
+            skippedCounter = skippedCounter + 1
+            device.shell('input tap 264 940')
+            time.sleep(0.7) #wait for GUI to load :)
 
     govgen = device.takeSnapshot(reconnect=True)
     govgen.save(os.getcwd()+'\screens\\'+str(x)+'gov.png')
