@@ -32,10 +32,12 @@ Essentially, this tool has 2 parts, one in charge of navigating through the menu
 The tool will connect to your android emulator (must have only 1 emulator running). It will navigate through the ranking menu, taking temporal screenshots of the relevant parts of each player profiles (3 pictures per player).
 
 After the screenshots are taken, it will call the subprogram `reader.py` to convert those screenshots into data, to then write it in the spreadsheet file.
-This happens once per player, so you should not try to open or modify the `.csv` file that is being generated.
+
+This happens once per player, so you should not try to open or modify the `.csv` file that is being generated until the scan finishes.
 
 # How to use
 Open the player ranking menu, and start the tool `py main.py`
+
 Only available for Home Kingdom. You can run it in Lost Kingdom, but it will not take the player ID's correctly.
 
 # Scanning example
