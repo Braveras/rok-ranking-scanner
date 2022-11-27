@@ -1,5 +1,5 @@
 # ROK Ranking Scanner
-Little tool to generate an excel (.csv) from top300 players in Rise of Kingdoms. (Home kingdom)
+Little tool to generate an excel `.csv` from top300 players in Rise of Kingdoms. (Home kingdom)
 
 Tested with MEmu and Bluestacks 5.9.0 (Remember to enable ADB)
 
@@ -7,23 +7,36 @@ Tested with MEmu and Bluestacks 5.9.0 (Remember to enable ADB)
 
 > Tested with 1920 x 1080 resolution (360 DPI)
 
-It will auto-skip players with a not accessible profile (users that migrated or banned accounts)
-  (It will now skip 2 consecutive inaccessible profiles if found)
+It will auto-skip player profiles which are not accessible, as for those who migrated, or banned accounts.
 
-It will take:
+# It will scan
 
 [ID, Name, Alliance, Power, Total Killpts, T1 Killpts, T2 Killpts, T3 Killpts, T4 Killpts, T5 Killpts, Highest Power, Victory, Defeat, Dead, Scout Times, Gathered rss, Sent rss, Help times]
 
-It is recommended that the scanning account is allianceless to avoid rally notifications from covering the ID.
+The average scanning time per profile is 6-8 seconds, which results in an total average scanning time of 30-40 minutes for top300.
 
-It is also recommended to turn off the title notifications under game settings.
+# Recommendations
 
-While this tool runs through ADB and allows you to use the PC while scanning, you must keep in mind that the clipboard is being used to copy every players name.
+- The scanning account should be allianceless to avoid rally notifications from covering the ID.
 
-Average time per profile is 6-8 seconds, which results in an total average scanning time of 30-40 minutes for top300.
+- Turn off the title notifications under game settings.
+
+- While this tool runs through ADB and allows you to use the PC while scanning, you must keep in mind that the clipboard is being used to copy every players name accurately.
+
+- DO NOT open or modify the excel file while the scan is running
+
+# How it works
+
+Essentially, this tool has 2 parts, one in charge of navigating through the menu while taking screenshots (main.py), and another one in charge of converting the screenshots to `.csv` data (reader.py).
+
+The tool will connect to your android emulator (must have only 1 emulator running). It will navigate through the ranking menu, taking temporal screenshots of the relevant parts of each player profiles (3 pictures per player).
+
+After the screenshots are taken, it will call the subprogram `reader.py` to convert those screenshots into data, to then write it in the spreadsheet file.
+This happens once per player, so you should not try to open or modify the `.csv` file that is being generated.
 
 # How to use
 Open the player ranking menu, and start the tool `py main.py`
+Only available for Home Kingdom. You can run it in Lost Kingdom, but it will not take the player ID's correctly.
 
 # Scanning example
 
