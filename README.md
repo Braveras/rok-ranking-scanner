@@ -25,9 +25,10 @@ Average time per profile is 6-8 seconds, which results in an total average scann
 # How to use
 Open the player ranking menu, and start the tool `py main.py`
 
-# Example
+# Scanning example
 
 ![74eefc37b35f888deb8cf8dc173033ea (1)](https://user-images.githubusercontent.com/36737950/204095306-be7e079f-2415-48fe-90f6-9c2c2ba6df53.gif)
 
+# Result example
 
 ![Excel_example](https://i.gyazo.com/47cf014201bb6a20b0a86c3841189a29.png)
