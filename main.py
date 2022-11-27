@@ -105,8 +105,9 @@ top123(260, 336, '1') #do top1
 top123(262, 466, '2') #do top2
 top123(260, 582, '3') #do top3
 
+skippedCounter = 0
+
 for x in range(4, 300):
-    skippedCounter = 0
     start_time = time.perf_counter()
     print('Reading profile '+str(x)+'...')
     
