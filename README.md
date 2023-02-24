@@ -36,6 +36,12 @@ After the screenshots are taken, it will call the subprogram `reader.py` to conv
 This happens once per player, so you should not try to open or modify the `.csv` file that is being generated until the scan finishes.
 
 # How to use
+
+Install the requirements:
+```python
+pip install -r requirements.txt
+```
+
 Open the player ranking menu, and start the tool `py main.py`
 
 Only available for Home Kingdom. You can run it in Lost Kingdom, but it will not take the player ID's correctly.
