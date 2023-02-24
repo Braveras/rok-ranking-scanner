@@ -1,7 +1,7 @@
 # ROK Ranking Scanner
 Little tool to generate an excel `.csv` from top300 players in Rise of Kingdoms. (Home kingdom)
 
-Tested with MEmu and Bluestacks 5.9.0 (Remember to enable ADB)
+Tested with MEmu and Bluestacks 5.9.0+ (Remember to enable ADB)
 
 > Tablet mode
 
