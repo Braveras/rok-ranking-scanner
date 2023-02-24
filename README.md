@@ -53,3 +53,9 @@ Only available for Home Kingdom. You can run it in Lost Kingdom, but it will not
 # Result example
 
 ![Excel_example](https://i.gyazo.com/47cf014201bb6a20b0a86c3841189a29.png)
+
+## Donate
+
+If you find this tool helpful, please consider supporting its continued development by making a donation. Any amount is appreciated!
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/paypalme/mrbraveras)
