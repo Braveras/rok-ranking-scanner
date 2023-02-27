@@ -37,7 +37,9 @@ This happens once per player, so you should not try to open or modify the `.csv`
 
 # How to use
 
-Install the requirements:
+Install [tesseract](https://github.com/UB-Mannheim/tesseract/wiki) and [adb server](https://adbinstaller.com/), and add them to [PATH](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/)
+
+Install the script requirements:
 ```python
 pip install -r requirements.txt
 ```
