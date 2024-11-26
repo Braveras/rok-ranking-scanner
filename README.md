@@ -13,7 +13,7 @@ It will auto-skip player profiles which are not accessible, as for those who mig
 
 [ID, Name, Alliance, Power, Total Killpts, T1 Killpts, T2 Killpts, T3 Killpts, T4 Killpts, T5 Killpts, Highest Power, Victory, Defeat, Dead, Scout Times, Gathered rss, Sent rss, Help times]
 
-The average scanning time per profile is 6-8 seconds, which results in an total average scanning time of 30-40 minutes for top300.
+The average scanning time per profile is 6-8 seconds, which results in a total average scanning time of 30-40 minutes for top300.
 
 # Recommendations
 
